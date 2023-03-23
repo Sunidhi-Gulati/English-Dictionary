@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set the character encoding and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set the page title and link to the stylesheet -->
+    <title>Dictionary app</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <!-- Add a navigation bar -->
+    <nav>
+      <div class="container">
+        <h1>Dictionary</h1>
+      </div>
+    </nav>
+
+    <!-- Add a section for the search input form -->
+    <main>
+      <section class="input container">
+        <h2>Discover the meaning!</h2>
+        <div class="form__wrap">
+          <div class="input__wrap">
+            <label for="input">Enter a query:</label>
+            <input type="text" placeholder="Type a word" id="input">
+            <button id="search">Search</button>
+          </div>
+        </div>
+      </section>   
+
+      <!-- Add a section for the search results -->
+      <section class="data container">
+        <span class="loading">Loading...</span>
+        <p class="def"></p>
+        <div class="audio"></div>
+        <div class="not__found"></div>
+      </section>
+    </main>
+
+    <!-- Link to the JavaScript file -->
+    <script src="./app.js"></script>
+  </body>
+</html>

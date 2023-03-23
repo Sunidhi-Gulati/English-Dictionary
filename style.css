@@ -1,0 +1,113 @@
+/* Importing the 'Muli' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400&display=swap');
+
+/* Setting primary, secondary, and text colors as CSS variables */
+:root {
+  --color-primary: #457b9d;
+  --color-secondary: #a8dadc;
+  --color-text: #2d3748;
+}
+
+/* Applying common styles to all elements */
+* {
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; 
+}
+
+/* Setting font-family for the body */
+body {
+  font-family: 'Muli', sans-serif;
+  min-height: 100vh;
+}
+
+/* Creating a container class to center content */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Styling the navigation bar */
+nav {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 2rem 0;
+}
+
+/* Styling the search input section */
+section.input {
+  padding-top: 100px;
+}
+
+/* Styling the heading */
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Creating a flexbox to center the search input */
+.form__wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling the search input container */
+.input__wrap {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #ddd;
+  margin-top: 20px;
+}
+
+/* Styling the search input */
+input {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  min-width: 400px;
+  outline: none;
+}
+
+/* Styling the search button */
+button {
+  background: var(--color-primary);
+  color: #fff;
+  height: 100%;
+  font-size: 18px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+/* Styling the section to display word definitions */
+section.data {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.loading {
+  display: none;
+}
+
+/* Styling the word definitions */
+section.data p.def {
+  font-size: 20px;
+  color: var(--color-text);
+  line-height: 1.8;
+}
+
+.suggested {
+  background: var(--color-secondary);
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.audio {
+  margin-top: 30px;
+}
